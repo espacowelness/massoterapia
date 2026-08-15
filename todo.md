@@ -27,3 +27,10 @@
 - [x] Aplicar Raleway e seus pesos ao texto explicativo da página de planos.
 - [x] Reposicionar e ampliar a imagem da segunda seção da landing page, alinhando-a ao texto de apoio.
 - [x] Validar responsividade, salvar checkpoint e entregar a nova versão.
+
+## Fundo fotográfico e navegação móvel
+
+- [x] Preparar a nova foto de massagem para uso como fundo da faixa de técnica e experiência.
+- [x] Aplicar desfoque, sobreposição verde e contraste acessível ao texto da faixa.
+- [x] Trocar o menu de três barras por navegação textual visível no celular.
+- [x] Validar em desktop e celular, salvar checkpoint e entregar a atualização.

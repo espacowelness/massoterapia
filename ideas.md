@@ -78,3 +78,5 @@ A logo enviada é a referência principal: o símbolo botânico/humano deve apar
 - Manter imagens táteis em luz natural nas rotas institucionais, com recortes ovais ou retangulares suaves.
 - Reservar o terracota a linhas de horizonte, numeração, legendas e ênfase itálica pontual; o verde Wellness permanece como voz institucional e de ação.
 - Garantir que cada página interna tenha pelo menos uma imagem de toque, tecido, pele, luz natural ou botânica, com a lista de serviços tratada como índice editorial numerado.
+- Usar a linha de horizonte terracota e a numeração editorial como estrutura recorrente de grandes transições, não apenas como ornamento.
+- Dar presença legível ao símbolo botânico e ao wordmark na abertura e navegação, sem competir com a headline.

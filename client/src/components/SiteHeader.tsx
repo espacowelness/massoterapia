@@ -2,7 +2,6 @@
  * Ritual Botânico Editorial: navegação leve, clara e expansível no celular,
  * mantendo as cinco áreas institucionais acessíveis em qualquer tela.
  */
-import { Menu, X } from "lucide-react";
 import { Link } from "wouter";
 
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
@@ -35,19 +34,6 @@ export function SiteHeader({ variant = "dark" }: SiteHeaderProps) {
           </Link>
         ))}
       </nav>
-      <details className="mobile-menu">
-        <summary aria-label="Abrir menu de navegação">
-          <Menu className="mobile-menu__open" size={19} strokeWidth={1.6} />
-          <X className="mobile-menu__close" size={19} strokeWidth={1.6} />
-        </summary>
-        <nav aria-label="Navegação principal no celular">
-          {navigation.map(([label, href]) => (
-            <Link key={href} href={href}>
-              {label}
-            </Link>
-          ))}
-        </nav>
-      </details>
     </header>
   );
 }

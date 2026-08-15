@@ -10,6 +10,7 @@ const heroImage = "/manus-storage/espaco-wellness-hero-enviada_d95aac3a.webp";
 const detailImage = "/manus-storage/espaco-wellness-miofascial_b26dc788.jpg";
 const drainageImage = "/manus-storage/espaco-wellness-massagem-autoral_406f65e0.jpg";
 const stillLifeImage = "/manus-storage/espaco-wellness-detalhe_a4e02ad2.jpg";
+const techniqueBackground = "/manus-storage/espaco-wellness-tecnica-fundo_7c08c33d.webp";
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
 const whatsappUrl = "https://wa.me/?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20procedimentos%20do%20Espaço%20Wellness.";
 
@@ -75,9 +76,14 @@ export default function Home() {
       </section>
 
       <section className="care-band">
+        <div className="care-band__media" aria-hidden="true">
+          <img src={techniqueBackground} alt="" />
+        </div>
+        <div className="care-band__veil" aria-hidden="true" />
         <div className="care-band__copy section-wrap">
           <div className="care-band__lead">
-            <p className="eyebrow eyebrow--light">Cuidado que acompanha o seu ritmo</p>
+            <p className="eyebrow eyebrow--light">02 — Cuidado que acompanha o seu ritmo</p>
+            <span className="horizon-line horizon-line--light horizon-line--lead" aria-hidden="true" />
             <h2>
               Técnica, atenção e uma experiência que convida o corpo a <em>respirar melhor.</em>
             </h2>
@@ -98,7 +104,8 @@ export default function Home() {
           <span className="image-caption">Atendimento com presença</span>
         </div>
         <div className="featured-copy reveal-up">
-          <p className="eyebrow">02 — Entre técnica e bem-estar</p>
+          <p className="eyebrow">03 — Entre técnica e bem-estar</p>
+          <span className="horizon-line horizon-line--copy" aria-hidden="true" />
           <h2>
             Um espaço para se sentir <em>inteiramente presente.</em>
           </h2>
@@ -115,7 +122,8 @@ export default function Home() {
       <section className="procedures-preview section-wrap">
         <div className="procedures-preview__top">
           <div>
-            <p className="eyebrow">03 — Procedimentos</p>
+            <p className="eyebrow">04 — Procedimentos</p>
+            <span className="horizon-line horizon-line--preview" aria-hidden="true" />
             <h2>Escolha o seu momento.</h2>
           </div>
           <Link href="/procedimentos" className="text-link text-link--desktop">
