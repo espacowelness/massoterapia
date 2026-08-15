@@ -8,7 +8,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 const heroImage = "/manus-storage/espaco-wellness-hero-enviada_d95aac3a.webp";
 const detailImage = "/manus-storage/espaco-wellness-miofascial_b26dc788.jpg";
-const drainageImage = "/manus-storage/espaco-wellness-drenagem_1fd6e3b7.jpg";
+const drainageImage = "/manus-storage/espaco-wellness-massagem-autoral_406f65e0.jpg";
 const stillLifeImage = "/manus-storage/espaco-wellness-detalhe_a4e02ad2.jpg";
 const logoPrimary = "/manus-storage/logo-espaco-wellness-v1_6abd73f4.webp";
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
@@ -149,7 +149,10 @@ export default function Home() {
       </section>
 
       <footer className="site-footer">
-        <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
+        <div className="footer-identity">
+          <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
+          <p className="footer-wordmark">Espaço <em>Wellness</em></p>
+        </div>
         <p>Massoterapia &amp; estética para o seu tempo de cuidado.</p>
         <Link href="/procedimentos">Procedimentos</Link>
       </footer>

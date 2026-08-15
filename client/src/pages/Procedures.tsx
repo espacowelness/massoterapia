@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
+const proceduresImage = "/manus-storage/espaco-wellness-procedimentos-autoral_8615018a.jpg";
 
 const procedures = [
   {
@@ -83,6 +84,18 @@ export default function Procedures() {
         </div>
       </section>
 
+      <section className="procedures-visual section-wrap" aria-label="O toque que antecede cada cuidado">
+        <figure className="procedures-visual__frame">
+          <img src={proceduresImage} alt="Detalhe de um atendimento de massoterapia com mãos cuidadosas" />
+          <figcaption>Presença em cada toque.</figcaption>
+        </figure>
+        <div className="procedures-visual__copy">
+          <p className="eyebrow">Antes de escolher</p>
+          <span className="horizon-line" aria-hidden="true" />
+          <p>Comece ouvindo o que o seu corpo precisa hoje.</p>
+        </div>
+      </section>
+
       <section id="lista" className="procedures-list-section section-wrap">
         <div className="procedures-list-heading">
           <p className="eyebrow">01 — Todos os cuidados</p>
@@ -129,7 +142,10 @@ export default function Procedures() {
       </section>
 
       <footer className="site-footer site-footer--soft">
-        <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
+        <div className="footer-identity">
+          <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
+          <p className="footer-wordmark">Espaço <em>Wellness</em></p>
+        </div>
         <p>Massoterapia &amp; estética para o seu tempo de cuidado.</p>
         <Link href="/planos">Conheça os planos</Link>
       </footer>

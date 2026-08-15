@@ -8,7 +8,7 @@ import { Link } from "wouter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
-const plansImage = "/manus-storage/espaco-wellness-planos_35fe4cc1.jpg";
+const plansImage = "/manus-storage/espaco-wellness-planos-autoral_aeb91111.jpg";
 
 export default function Plans() {
   const handleWhatsApp = () => {
@@ -63,7 +63,10 @@ export default function Plans() {
       </section>
 
       <footer className="site-footer">
-        <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
+        <div className="footer-identity">
+          <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
+          <p className="footer-wordmark">Espaço <em>Wellness</em></p>
+        </div>
         <p>Massoterapia &amp; estética para o seu tempo de cuidado.</p>
         <Link href="/onde-estamos">Onde estamos</Link>
       </footer>

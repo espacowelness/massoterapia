@@ -7,7 +7,7 @@ import { Link } from "wouter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
-const aboutImage = "/manus-storage/espaco-wellness-quem-sou-eu_d402b217.jpg";
+const aboutImage = "/manus-storage/espaco-wellness-ritual-autoral_9656d547.jpg";
 
 export default function About() {
   return (
@@ -67,7 +67,10 @@ export default function About() {
       </section>
 
       <footer className="site-footer">
-        <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
+        <div className="footer-identity">
+          <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
+          <p className="footer-wordmark">Espaço <em>Wellness</em></p>
+        </div>
         <p>Massoterapia &amp; estética para o seu tempo de cuidado.</p>
         <Link href="/planos">Conheça os planos</Link>
       </footer>

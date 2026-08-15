@@ -41,6 +41,7 @@ export default function Location() {
           <a href={routeUrl} target="_blank" rel="noreferrer" aria-label="Abrir localização do Espaço Wellness no Google Maps">
             <img className="location-map-image" src={mapImage} alt="Mapa da localização na Avenida Eusébio de Queiroz, 4359" />
           </a>
+          <p className="location-map-caption">Toque no mapa para abrir sua rota</p>
         </div>
         <div className="location-card">
           <MapPin size={22} strokeWidth={1.45} aria-hidden="true" />
@@ -55,7 +56,10 @@ export default function Location() {
       </section>
 
       <footer className="site-footer">
-        <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
+        <div className="footer-identity">
+          <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
+          <p className="footer-wordmark">Espaço <em>Wellness</em></p>
+        </div>
         <p>Massoterapia &amp; estética para o seu tempo de cuidado.</p>
         <Link href="/planos">Conheça os planos</Link>
       </footer>
