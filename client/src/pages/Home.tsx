@@ -10,8 +10,8 @@ const heroImage = "/manus-storage/espaco-wellness-hero-enviada_d95aac3a.webp";
 const detailImage = "/manus-storage/espaco-wellness-miofascial_b26dc788.jpg";
 const drainageImage = "/manus-storage/espaco-wellness-massagem-autoral_406f65e0.jpg";
 const stillLifeImage = "/manus-storage/espaco-wellness-detalhe_a4e02ad2.jpg";
-const logoPrimary = "/manus-storage/logo-espaco-wellness-v1_6abd73f4.webp";
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
+const whatsappUrl = "https://wa.me/?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20procedimentos%20do%20Espaço%20Wellness.";
 
 const curatedCare = [
   "Massagem miofascial",
@@ -30,12 +30,12 @@ export default function Home() {
         <SiteHeader variant="light" />
 
         <div className="hero-content">
-          <div className="hero-brand" aria-label="Espaço Wellness">
-            <img className="hero-brand-logo" src={logoPrimary} alt="" />
+          <Link href="/quem-sou-eu" className="hero-brand" aria-label="Conheça o Espaço Wellness">
+            <img className="hero-brand-logo" src={logoSecondary} alt="" />
             <p className="hero-brand-name">
               Espaço <em>Wellness</em>
             </p>
-          </div>
+          </Link>
           <p className="eyebrow eyebrow--light">Massoterapia &amp; estética</p>
           <span className="horizon-line horizon-line--light" aria-hidden="true" />
           <h1 id="hero-title">Seu corpo também pede pausa.</h1>
@@ -137,22 +137,22 @@ export default function Home() {
         <div className="price-art" aria-hidden="true">
           <img src={stillLifeImage} alt="" />
         </div>
-        <div className="price-content section-wrap">
+        <a className="price-content price-content--clickable section-wrap" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Falar com o Espaço Wellness pelo WhatsApp sobre procedimentos a partir de R$ 80">
           <p className="eyebrow eyebrow--light">Espaço Wellness</p>
           <p className="price-label">Procedimentos a partir de</p>
           <p className="price-value">R$ 80</p>
-          <Link href="/procedimentos" className="round-cta round-cta--light">
+          <span className="round-cta round-cta--light">
             <span>Explorar procedimentos</span>
             <ArrowUpRight size={18} strokeWidth={1.5} />
-          </Link>
-        </div>
+          </span>
+        </a>
       </section>
 
       <footer className="site-footer">
-        <div className="footer-identity">
+        <Link href="/quem-sou-eu" className="footer-identity" aria-label="Conheça o Espaço Wellness">
           <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
           <p className="footer-wordmark">Espaço <em>Wellness</em></p>
-        </div>
+        </Link>
         <p>Massoterapia &amp; estética para o seu tempo de cuidado.</p>
         <Link href="/procedimentos">Procedimentos</Link>
       </footer>

@@ -4,62 +4,58 @@
  */
 import { ArrowDown, ArrowLeft, ArrowUpRight, ChevronDown } from "lucide-react";
 import { useState } from "react";
-import { toast } from "sonner";
 import { Link } from "wouter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
 const proceduresImage = "/manus-storage/espaco-wellness-procedimentos-autoral_8615018a.jpg";
+const whatsappUrl = "https://wa.me/?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20procedimentos%20do%20Espaço%20Wellness.";
 
 const procedures = [
   {
-    name: "Aplicação de Kinesio (Taping)",
-    description: "Aplicação de bandagem elástica funcional como recurso complementar ao movimento, sempre após avaliação individual.",
+    name: "Aplicação de Kinesio Taping",
+    description: "Técnica que utiliza bandagens elásticas aplicadas sobre a pele para auxiliar na estabilização muscular, alívio de dores e redução de inflamações, sem restringir os movimentos do corpo. Indicada para lesões, tensões musculares e recuperação pós-treino.",
   },
   {
-    name: "Tratamento de fibromialgia",
-    description: "Atendimento adaptado, com técnicas e intensidade definidas de forma cuidadosa para respeitar o seu momento.",
+    name: "Tratamento de Fibromialgia",
+    description: "Protocolo de massoterapia voltado para o alívio dos pontos de dor característicos da fibromialgia, com técnicas suaves que ajudam a reduzir a tensão muscular, melhorar a qualidade do sono e proporcionar mais bem-estar no dia a dia.",
   },
   {
-    name: "Drenagem pós-operatório",
-    description: "Cuidado individual de acompanhamento pós-operatório, conduzido conforme orientação profissional e necessidade de cada pessoa.",
+    name: "Drenagem Pós-Operatório",
+    description: "Massagem específica indicada após procedimentos cirúrgicos, que auxilia na redução do inchaço, na reabsorção de líquidos e na recuperação do organismo, contribuindo para um pós-operatório mais confortável e com melhores resultados estéticos.",
   },
   {
-    name: "Tratamento de lipedema",
-    description: "Plano de cuidado corporal com técnicas adaptadas e uma conversa atenta sobre as suas necessidades e rotina.",
+    name: "Tratamento de Lipedema",
+    description: "Abordagem terapêutica voltada para pessoas com lipedema, com técnicas que ajudam a aliviar a dor, reduzir o inchaço e melhorar a circulação nas áreas afetadas, promovendo mais conforto e qualidade de vida.",
   },
   {
-    name: "Massagem miofascial",
-    description: "Técnica manual voltada a áreas de tensão, mobilidade e sensação de maior leveza no corpo.",
+    name: "Massagem Miofascial",
+    description: "Técnica que atua na liberação das tensões acumuladas na fáscia muscular, aliviando dores, melhorando a mobilidade e restaurando o equilíbrio do corpo.",
   },
   {
-    name: "Massagem relaxante",
-    description: "Uma pausa guiada por manobras suaves para desacelerar a rotina e favorecer uma sensação de bem-estar.",
+    name: "Massagem Relaxante",
+    description: "Massagem indicada para reduzir o estresse e a tensão acumulada, promovendo relaxamento profundo, alívio da fadiga e uma sensação renovada de bem-estar.",
   },
   {
-    name: "Drenagem linfática",
-    description: "Movimentos suaves e ritmados, organizados de acordo com a sua avaliação e objetivo de cuidado.",
+    name: "Drenagem Linfática",
+    description: "Técnica de estímulo do sistema linfático que auxilia na eliminação de toxinas e líquidos retidos, reduzindo o inchaço, melhorando a circulação e proporcionando uma sensação de leveza ao corpo.",
   },
   {
     name: "Ventosaterapia",
-    description: "Recurso complementar realizado com sucção controlada e sempre ajustado à avaliação do seu atendimento.",
+    description: "Técnica milenar que utiliza ventosas para estimular a circulação sanguínea, aliviar tensões musculares e promover a soltura de pontos de dor, auxiliando na recuperação e no relaxamento do corpo.",
   },
   {
     name: "Lipocavitação",
-    description: "Procedimento estético corporal indicado após avaliação individual, com planejamento alinhado aos seus objetivos.",
+    description: "Procedimento estético não invasivo que utiliza ultrassom para auxiliar na redução de medidas e no combate à gordura localizada, contribuindo para um contorno corporal mais definido.",
   },
   {
     name: "Acupuntura",
-    description: "Atendimento realizado de forma individual e cuidadosa, com indicação definida a partir de avaliação profissional.",
+    description: "Prática milenar que utiliza a inserção de agulhas finas em pontos específicos do corpo, auxiliando no alívio de dores, na redução do estresse e no equilíbrio geral do organismo.",
   },
 ];
 
 export default function Procedures() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const handleWhatsApp = () => {
-    toast.message("Envie o link do WhatsApp para ativarmos este atendimento.");
-  };
 
   return (
     <main className="procedures-page">
@@ -121,10 +117,10 @@ export default function Procedures() {
                 <div id={`procedure-detail-${index}`} className="procedure-detail">
                   <div className="procedure-detail__body">
                     <p>{procedure.description}</p>
-                    <button type="button" className="page-button page-button--solid" onClick={handleWhatsApp}>
+                    <a href={whatsappUrl} target="_blank" rel="noreferrer" className="page-button page-button--solid">
                       <span>Falar no WhatsApp</span>
                       <ArrowUpRight size={17} strokeWidth={1.5} />
-                    </button>
+                    </a>
                   </div>
                 </div>
               )}
@@ -142,10 +138,10 @@ export default function Procedures() {
       </section>
 
       <footer className="site-footer site-footer--soft">
-        <div className="footer-identity">
+        <Link href="/quem-sou-eu" className="footer-identity" aria-label="Conheça o Espaço Wellness">
           <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
           <p className="footer-wordmark">Espaço <em>Wellness</em></p>
-        </div>
+        </Link>
         <p>Massoterapia &amp; estética para o seu tempo de cuidado.</p>
         <Link href="/planos">Conheça os planos</Link>
       </footer>

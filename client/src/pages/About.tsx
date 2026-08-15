@@ -67,10 +67,10 @@ export default function About() {
       </section>
 
       <footer className="site-footer">
-        <div className="footer-identity">
+        <Link href="/quem-sou-eu" className="footer-identity" aria-label="Conheça o Espaço Wellness">
           <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
           <p className="footer-wordmark">Espaço <em>Wellness</em></p>
-        </div>
+        </Link>
         <p>Massoterapia &amp; estética para o seu tempo de cuidado.</p>
         <Link href="/planos">Conheça os planos</Link>
       </footer>

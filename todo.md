@@ -18,3 +18,12 @@
 - [x] Reorganizar a página Onde Estamos com o mapa acima e o endereço abaixo.
 - [x] Substituir imagens selecionadas por novos visuais mais particulares e menos genéricos.
 - [x] Validar responsividade, salvar checkpoint e entregar a nova versão.
+
+## Links, conteúdo e composição
+
+- [x] Preparar CTAs de valores e procedimentos para o destino de WhatsApp informado futuramente.
+- [x] Inserir os textos completos fornecidos em todos os procedimentos expansíveis.
+- [x] Alterar a logo da abertura para a segunda variação e conectar a marca ao caminho Quem Somos.
+- [x] Aplicar Raleway e seus pesos ao texto explicativo da página de planos.
+- [x] Reposicionar e ampliar a imagem da segunda seção da landing page, alinhando-a ao texto de apoio.
+- [x] Validar responsividade, salvar checkpoint e entregar a nova versão.

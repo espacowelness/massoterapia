@@ -1982,3 +1982,174 @@ p {
     font-size: clamp(2.9rem, 12vw, 4.2rem);
   }
 }
+
+/* Ajustes solicitados: planos em Raleway, bloco de preço acionável e imagem de introdução alinhada. */
+.plans-statement__content > p.plans-statement__body {
+  max-width: 41rem;
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--green-ink);
+  font-family: "Raleway Wellness", "Raleway", sans-serif;
+  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.76;
+}
+
+.plans-statement__content > p.plans-statement__body strong {
+  color: var(--green-dark);
+  font-weight: 700;
+}
+
+.plans-statement__content .plans-statement__closing {
+  font-family: "Raleway Wellness", "Raleway", sans-serif;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.intro-aside {
+  display: flex;
+  max-width: 28rem;
+  margin-inline: auto;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+.oval-frame--intro {
+  width: min(100%, 24rem);
+  margin-inline: auto;
+}
+
+.intro-aside p {
+  max-width: 24rem;
+  margin: 1.55rem auto 0;
+}
+
+.price-content--clickable {
+  display: block;
+  color: var(--cream);
+  transition: transform 220ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.price-content--clickable:hover {
+  transform: translateY(-4px);
+}
+
+.price-content--clickable .round-cta {
+  display: inline-flex;
+}
+
+.footer-identity {
+  color: inherit;
+}
+
+@media (max-width: 760px) {
+  .intro-aside {
+    max-width: 25rem;
+  }
+
+  .oval-frame--intro {
+    width: min(100%, 20rem);
+  }
+}
+
+/* Passagem editorial: planos mais táteis, marca mais memorável e serviços como índice curado. */
+.header-logo img {
+  width: clamp(2.7rem, 4.2vw, 3.85rem);
+}
+
+.header-wordmark {
+  font-size: clamp(0.92rem, 1.52vw, 1.16rem);
+}
+
+.plans-page .plans-process {
+  padding-top: clamp(3rem, 7vw, 6rem);
+  padding-bottom: clamp(4rem, 8vw, 7rem);
+  align-items: end;
+}
+
+.plans-process__image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 9rem 0 0;
+  box-shadow: 0 1.2rem 3rem rgba(38, 49, 40, 0.12);
+}
+
+.plans-process__image img {
+  aspect-ratio: 0.96;
+  object-position: 68% center;
+}
+
+.plans-process__image figcaption {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  max-width: 13rem;
+  padding: 0.48rem 0.72rem;
+  background: var(--terracotta);
+  color: var(--cream);
+  font-family: "Palatino Wellness", Georgia, serif;
+  font-size: 0.96rem;
+  font-style: italic;
+  line-height: 1.1;
+}
+
+.plans-process__steps .horizon-line {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.procedures-list {
+  border-top: 1px solid rgba(38, 49, 40, 0.24);
+}
+
+.procedure-row {
+  position: relative;
+}
+
+.procedure-row__number {
+  color: var(--terracotta);
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.procedure-row h2 {
+  position: relative;
+  padding-left: 0.9rem;
+}
+
+.procedure-row h2::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 1.35rem;
+  background: var(--terracotta);
+  content: "";
+  opacity: 0.7;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 760px) {
+  .header-logo img {
+    width: 2.65rem;
+  }
+
+  .plans-process__image {
+    width: min(100%, 24rem);
+    border-radius: 0 7rem 0 0;
+  }
+
+  .plans-process__steps .horizon-line {
+    margin-inline: auto;
+  }
+
+  .plans-process__image figcaption {
+    right: 0.7rem;
+    bottom: 0.7rem;
+  }
+}

@@ -76,3 +76,5 @@ A logo enviada é a referência principal: o símbolo botânico/humano deve apar
 - Nas páginas internas, combinar ao menos uma composição editorial assimétrica com imagem, numeração, linha de horizonte ou bloco de apoio.
 - Repetir a linha de horizonte terracota como separador fino, com uso limitado a ênfases, numeração e microdetalhes; nunca aplicar marrom sobre fundos verdes.
 - Manter imagens táteis em luz natural nas rotas institucionais, com recortes ovais ou retangulares suaves.
+- Reservar o terracota a linhas de horizonte, numeração, legendas e ênfase itálica pontual; o verde Wellness permanece como voz institucional e de ação.
+- Garantir que cada página interna tenha pelo menos uma imagem de toque, tecido, pele, luz natural ou botânica, com a lista de serviços tratada como índice editorial numerado.

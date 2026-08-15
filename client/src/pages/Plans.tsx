@@ -3,18 +3,14 @@
  * direta e acolhedora, com o CTA pronto para receber o canal oficial de WhatsApp.
  */
 import { ArrowUpRight } from "lucide-react";
-import { toast } from "sonner";
 import { Link } from "wouter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
-const plansImage = "/manus-storage/espaco-wellness-planos-autoral_aeb91111.jpg";
+const plansImage = "/manus-storage/espaco-wellness-planos-toque_a03cebb5.jpg";
+const whatsappUrl = "https://wa.me/?text=Olá%2C%20gostaria%20de%20conhecer%20os%20planos%20personalizados%20do%20Espaço%20Wellness.";
 
 export default function Plans() {
-  const handleWhatsApp = () => {
-    toast.message("Envie o link do WhatsApp para ativarmos este atendimento.");
-  };
-
   return (
     <main className="inner-page plans-page">
       <SiteHeader variant="dark" />
@@ -29,10 +25,12 @@ export default function Plans() {
 
       <section className="plans-process section-wrap">
         <figure className="plans-process__image">
-          <img src={plansImage} alt="Caderno e detalhes de uma conversa de cuidado personalizada" />
+          <img src={plansImage} alt="Momento de cuidado com mãos e tecido em luz natural" />
+          <figcaption>Um cuidado que se ajusta ao seu ritmo.</figcaption>
         </figure>
         <div className="plans-process__steps">
           <p className="eyebrow">Como construímos juntos</p>
+          <span className="horizon-line" aria-hidden="true" />
           <ol>
             <li><span>01</span> Conversamos sobre o seu momento.</li>
             <li><span>02</span> Organizamos os cuidados que fazem sentido.</li>
@@ -44,29 +42,29 @@ export default function Plans() {
       <section className="plans-statement section-wrap">
         <div className="plans-statement__line" aria-hidden="true" />
         <div className="plans-statement__content">
-          <p>
-            Cada plano é pensado de forma personalizada, mês a mês, de acordo com as necessidades e
-            objetivos de cada cliente.
+          <p className="plans-statement__body">
+            Cada plano é pensado de forma <strong>personalizada, mês a mês</strong>, de acordo com as
+            necessidades e objetivos de cada cliente.
           </p>
-          <p>
-            Não trabalhamos com pacotes fechados: entendemos que cada pessoa tem uma rotina, um corpo
-            e um momento diferente — por isso, montamos juntos o que faz mais sentido para você.
+          <p className="plans-statement__body">
+            <strong>Não trabalhamos com pacotes fechados:</strong> entendemos que cada pessoa tem uma
+            rotina, um corpo e um momento diferente — por isso, montamos juntos o que faz mais sentido para você.
           </p>
           <p className="plans-statement__closing">
             Fale conosco pelo WhatsApp e vamos construir o plano ideal para o seu bem-estar.
           </p>
-          <button type="button" className="page-button page-button--dark" onClick={handleWhatsApp}>
+          <a href={whatsappUrl} target="_blank" rel="noreferrer" className="page-button page-button--dark">
             <span>Falar no WhatsApp</span>
             <ArrowUpRight size={17} strokeWidth={1.5} />
-          </button>
+          </a>
         </div>
       </section>
 
       <footer className="site-footer">
-        <div className="footer-identity">
+        <Link href="/quem-sou-eu" className="footer-identity" aria-label="Conheça o Espaço Wellness">
           <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
           <p className="footer-wordmark">Espaço <em>Wellness</em></p>
-        </div>
+        </Link>
         <p>Massoterapia &amp; estética para o seu tempo de cuidado.</p>
         <Link href="/onde-estamos">Onde estamos</Link>
       </footer>
