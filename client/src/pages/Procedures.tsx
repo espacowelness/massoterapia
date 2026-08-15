@@ -10,7 +10,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
 const proceduresImage = "/manus-storage/espaco-wellness-procedimentos-autoral_8615018a.jpg";
-const whatsappUrl = "https://wa.me/?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20procedimentos%20do%20Espaço%20Wellness.";
+const whatsappUrl = "https://wa.me/55859869821513?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20procedimentos%20do%20Espaço%20Wellness.";
 
 const procedures = [
   {

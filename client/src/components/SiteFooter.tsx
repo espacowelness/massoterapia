@@ -6,7 +6,7 @@ import { Link } from "wouter";
 
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
 const instagramUrl = "https://www.instagram.com/edi.massoterapia.e_estetica/";
-const whatsappUrl = "https://wa.me/5585986981513";
+const whatsappUrl = "https://wa.me/55859869821513";
 
 export function SiteFooter({ soft = false }: { soft?: boolean }) {
   return (

@@ -8,7 +8,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
 const plansImage = "/manus-storage/espaco-wellness-planos-toque_a03cebb5.jpg";
-const whatsappUrl = "https://wa.me/?text=Olá%2C%20gostaria%20de%20conhecer%20os%20planos%20personalizados%20do%20Espaço%20Wellness.";
+const whatsappUrl = "https://wa.me/55859869821513?text=Olá%2C%20gostaria%20de%20conhecer%20os%20planos%20personalizados%20do%20Espaço%20Wellness.";
 
 export default function Plans() {
   return (

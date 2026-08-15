@@ -55,3 +55,8 @@
 
 - [x] Centralizar o símbolo da logo no topo do celular e aumentar sua escala visual.
 - [x] Validar a correção em tela móvel, salvar checkpoint e entregar a atualização.
+
+## Atualização de WhatsApp
+
+- [x] Substituir todos os links e CTAs de WhatsApp pelo número +55 85 98698-21513.
+- [x] Verificar os encaminhamentos, salvar checkpoint e entregar a atualização.
