@@ -2528,11 +2528,14 @@ p {
   }
 
   .header-logo {
+    width: auto;
     gap: 0;
+    justify-content: center;
   }
 
   .header-logo img {
-    width: 2.15rem;
+    width: 3.1rem;
+    transform: scale(2.05);
   }
 }
 

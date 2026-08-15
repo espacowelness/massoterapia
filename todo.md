@@ -50,3 +50,8 @@
 - [x] Clarear sutilmente os tons de texto verde mantendo a legibilidade.
 - [x] Adicionar animação lateral na abertura e entradas ascendentes nos procedimentos.
 - [x] Validar em desktop e celular, salvar checkpoint e entregar a atualização.
+
+## Correção do símbolo no cabeçalho móvel
+
+- [x] Centralizar o símbolo da logo no topo do celular e aumentar sua escala visual.
+- [x] Validar a correção em tela móvel, salvar checkpoint e entregar a atualização.
