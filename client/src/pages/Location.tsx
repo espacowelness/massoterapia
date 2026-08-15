@@ -3,7 +3,7 @@
  * com mapa arredondado, endereço claro e acesso direto à rota no Google Maps.
  */
 import { ArrowUpRight, MapPin } from "lucide-react";
-import { Link } from "wouter";
+import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
@@ -55,14 +55,7 @@ export default function Location() {
         </div>
       </section>
 
-      <footer className="site-footer">
-        <Link href="/quem-sou-eu" className="footer-identity" aria-label="Conheça o Espaço Wellness">
-          <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
-          <p className="footer-wordmark">Espaço <em>Wellness</em></p>
-        </Link>
-        <p>Massoterapia &amp; estética para o seu tempo de cuidado.</p>
-        <Link href="/planos">Conheça os planos</Link>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

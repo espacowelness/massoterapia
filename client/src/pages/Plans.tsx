@@ -3,7 +3,7 @@
  * direta e acolhedora, com o CTA pronto para receber o canal oficial de WhatsApp.
  */
 import { ArrowUpRight } from "lucide-react";
-import { Link } from "wouter";
+import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
@@ -34,16 +34,14 @@ export default function Plans() {
           <ol>
             <li><span>01</span> Conversamos sobre o seu momento.</li>
             <li><span>02</span> Organizamos os cuidados que fazem sentido.</li>
-            <li><span>03</span> Acompanhamos o seu ritmo mês a mês.</li>
           </ol>
         </div>
       </section>
 
       <section className="plans-statement section-wrap">
-        <div className="plans-statement__line" aria-hidden="true" />
         <div className="plans-statement__content">
           <p className="plans-statement__body">
-            Cada plano é pensado de forma <strong>personalizada, mês a mês</strong>, de acordo com as
+            Cada plano é pensado de forma <strong>personalizada</strong>, de acordo com as
             necessidades e objetivos de cada cliente.
           </p>
           <p className="plans-statement__body">
@@ -60,14 +58,7 @@ export default function Plans() {
         </div>
       </section>
 
-      <footer className="site-footer">
-        <Link href="/quem-sou-eu" className="footer-identity" aria-label="Conheça o Espaço Wellness">
-          <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
-          <p className="footer-wordmark">Espaço <em>Wellness</em></p>
-        </Link>
-        <p>Massoterapia &amp; estética para o seu tempo de cuidado.</p>
-        <Link href="/onde-estamos">Onde estamos</Link>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

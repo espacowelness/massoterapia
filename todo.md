@@ -34,3 +34,12 @@
 - [x] Aplicar desfoque, sobreposição verde e contraste acessível ao texto da faixa.
 - [x] Trocar o menu de três barras por navegação textual visível no celular.
 - [x] Validar em desktop e celular, salvar checkpoint e entregar a atualização.
+
+## Fundos visuais, contatos e ritmo de layout
+
+- [x] Preparar as duas novas fotos enviadas para os fundos verdes das páginas.
+- [x] Centralizar a marca de abertura no celular e remover as frases numeradas indicadas.
+- [x] Aplicar imagens desfocadas sob todas as seções de fundo verde, mantendo contraste do conteúdo.
+- [x] Reorganizar Planos, centralizar o bloco inferior e reduzir espaços em branco do desktop com tipografia maior.
+- [x] Adicionar Instagram e WhatsApp reais ao rodapé global.
+- [x] Validar responsividade, salvar checkpoint e entregar a atualização.

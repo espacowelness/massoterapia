@@ -488,8 +488,9 @@ p {
 .care-band__copy {
   display: grid;
   gap: 3rem;
-  grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.43fr);
-  align-items: end;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -500,15 +501,16 @@ p {
 }
 
 .care-band__detail {
+  max-width: 31rem;
   padding-bottom: 0.35rem;
   text-align: center;
 }
 
 .care-band__detail p {
-  max-width: 24rem;
+  max-width: 29rem;
   margin: 1.5rem auto 0;
   color: rgba(234, 234, 222, 0.83);
-  font-size: 0.9rem;
+  font-size: 1.04rem;
 }
 
 .line-motif {
@@ -2280,5 +2282,190 @@ p {
     padding-top: 0;
     font-size: 0.49rem;
     letter-spacing: 0.07em;
+  }
+}
+
+/* Fundos verdes com textura fotográfica e ritmo compacto em desktop. */
+.about-commitment,
+.location-card,
+.procedures-price {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.about-commitment::before,
+.location-card::before,
+.procedures-price::before {
+  position: absolute;
+  z-index: -2;
+  inset: -1.5rem;
+  background-image: url("/manus-storage/espaco-wellness-fundo-verde-1_5c0715ee.webp");
+  background-position: center;
+  background-size: cover;
+  content: "";
+  filter: blur(10px) saturate(0.62) brightness(0.58);
+  opacity: 0.8;
+  transform: scale(1.08);
+}
+
+.location-card::before {
+  background-image: url("/manus-storage/espaco-wellness-fundo-verde-2_a2463749.webp");
+}
+
+.about-commitment::after,
+.location-card::after,
+.procedures-price::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: rgba(24, 78, 43, 0.8);
+  content: "";
+}
+
+.location-card > *,
+.procedures-price > * {
+  position: relative;
+  z-index: 1;
+}
+
+.plans-statement {
+  display: block;
+  max-width: 48rem;
+  margin-inline: auto;
+  padding-top: clamp(3.5rem, 7vw, 5.5rem);
+  text-align: center;
+}
+
+.plans-statement__content {
+  margin-inline: auto;
+}
+
+.plans-process__steps {
+  margin-inline: auto;
+}
+
+.site-footer {
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.site-footer::before {
+  width: min(100%, 31rem);
+  height: 1px;
+  margin-bottom: 0.6rem;
+  background: var(--terracotta);
+  content: "";
+}
+
+.footer-contacts {
+  display: flex;
+  gap: 0.85rem 1.3rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.footer-contacts > span {
+  color: var(--terracotta);
+}
+
+.footer-contacts a {
+  display: inline-flex;
+  gap: 0.38rem;
+  align-items: center;
+  color: var(--green-dark);
+}
+
+.footer-contacts a:hover {
+  color: var(--terracotta);
+}
+
+@media (min-width: 761px) {
+  .page-hero {
+    min-height: 34rem;
+    padding-top: 9.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .page-hero--compact {
+    min-height: 29rem;
+  }
+
+  .page-hero__intro,
+  .about-statement > div > p:last-child,
+  .plans-statement__content > p.plans-statement__body,
+  .procedures-hero__bottom > p {
+    font-size: clamp(1.12rem, 1.7vw, 1.33rem);
+  }
+
+  .about-statement,
+  .location-section,
+  .plans-process {
+    padding-top: clamp(3.6rem, 7vw, 6rem);
+    padding-bottom: clamp(4.2rem, 8vw, 6.8rem);
+  }
+
+  .intro-section,
+  .featured-section,
+  .procedures-preview {
+    padding-top: clamp(4.2rem, 8vw, 6.5rem);
+    padding-bottom: clamp(4.2rem, 8vw, 6.5rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-brand {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Compactação editorial: presença de marca e fluxo contínuo, sem grandes vazios entre conteúdo e imagem. */
+@media (min-width: 761px) {
+  .header-logo img {
+    width: clamp(3.15rem, 4.6vw, 4.25rem);
+  }
+
+  .header-wordmark {
+    font-size: clamp(1.05rem, 1.65vw, 1.28rem);
+  }
+
+  .page-hero {
+    min-height: 29rem;
+    padding-top: 8.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .page-hero--compact {
+    min-height: 24rem;
+  }
+
+  .plans-page .plans-process {
+    padding-top: clamp(1.5rem, 4vw, 3.2rem);
+    padding-bottom: clamp(3.2rem, 6vw, 5rem);
+  }
+
+  .plans-page .plans-statement {
+    padding-top: clamp(2.8rem, 5vw, 4.2rem);
+    padding-bottom: clamp(4.2rem, 7vw, 5.8rem);
+  }
+
+  .about-page .about-portrait-section,
+  .location-page .location-arrival {
+    padding-top: clamp(1.8rem, 4vw, 3.4rem);
+  }
+
+  .procedures-page .procedures-hero {
+    min-height: 29rem;
+    padding-bottom: 3.5rem;
   }
 }

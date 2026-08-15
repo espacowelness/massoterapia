@@ -80,3 +80,4 @@ A logo enviada é a referência principal: o símbolo botânico/humano deve apar
 - Garantir que cada página interna tenha pelo menos uma imagem de toque, tecido, pele, luz natural ou botânica, com a lista de serviços tratada como índice editorial numerado.
 - Usar a linha de horizonte terracota e a numeração editorial como estrutura recorrente de grandes transições, não apenas como ornamento.
 - Dar presença legível ao símbolo botânico e ao wordmark na abertura e navegação, sem competir com a headline.
+- Preferir um fluxo editorial mais compacto nas páginas internas, aproximando hero, imagem e conteúdo para que o respiro não se transforme em vazio.

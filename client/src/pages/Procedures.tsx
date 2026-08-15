@@ -5,6 +5,7 @@
 import { ArrowDown, ArrowLeft, ArrowUpRight, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Link } from "wouter";
+import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
@@ -137,14 +138,7 @@ export default function Procedures() {
         <p className="procedures-price__value">R$ 80</p>
       </section>
 
-      <footer className="site-footer site-footer--soft">
-        <Link href="/quem-sou-eu" className="footer-identity" aria-label="Conheça o Espaço Wellness">
-          <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
-          <p className="footer-wordmark">Espaço <em>Wellness</em></p>
-        </Link>
-        <p>Massoterapia &amp; estética para o seu tempo de cuidado.</p>
-        <Link href="/planos">Conheça os planos</Link>
-      </footer>
+      <SiteFooter soft />
     </main>
   );
 }

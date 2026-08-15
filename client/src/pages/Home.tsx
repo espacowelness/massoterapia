@@ -4,6 +4,7 @@
  */
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { Link } from "wouter";
+import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const heroImage = "/manus-storage/espaco-wellness-hero-enviada_d95aac3a.webp";
@@ -58,7 +59,6 @@ export default function Home() {
 
       <section id="essencia" className="intro-section section-wrap">
         <div className="intro-statement reveal-up">
-          <p className="eyebrow">01 — Uma pausa intencional</p>
           <h2>
             Cuidar de si não é deixar tudo para depois.
             <em> É escutar o agora.</em>
@@ -82,7 +82,6 @@ export default function Home() {
         <div className="care-band__veil" aria-hidden="true" />
         <div className="care-band__copy section-wrap">
           <div className="care-band__lead">
-            <p className="eyebrow eyebrow--light">02 — Cuidado que acompanha o seu ritmo</p>
             <span className="horizon-line horizon-line--light horizon-line--lead" aria-hidden="true" />
             <h2>
               Técnica, atenção e uma experiência que convida o corpo a <em>respirar melhor.</em>
@@ -104,7 +103,6 @@ export default function Home() {
           <span className="image-caption">Atendimento com presença</span>
         </div>
         <div className="featured-copy reveal-up">
-          <p className="eyebrow">03 — Entre técnica e bem-estar</p>
           <span className="horizon-line horizon-line--copy" aria-hidden="true" />
           <h2>
             Um espaço para se sentir <em>inteiramente presente.</em>
@@ -122,7 +120,6 @@ export default function Home() {
       <section className="procedures-preview section-wrap">
         <div className="procedures-preview__top">
           <div>
-            <p className="eyebrow">04 — Procedimentos</p>
             <span className="horizon-line horizon-line--preview" aria-hidden="true" />
             <h2>Escolha o seu momento.</h2>
           </div>
@@ -156,14 +153,7 @@ export default function Home() {
         </a>
       </section>
 
-      <footer className="site-footer">
-        <Link href="/quem-sou-eu" className="footer-identity" aria-label="Conheça o Espaço Wellness">
-          <img src={logoSecondary} alt="Logo Espaço Wellness" className="footer-logo" />
-          <p className="footer-wordmark">Espaço <em>Wellness</em></p>
-        </Link>
-        <p>Massoterapia &amp; estética para o seu tempo de cuidado.</p>
-        <Link href="/procedimentos">Procedimentos</Link>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
