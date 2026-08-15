@@ -4,8 +4,9 @@
  */
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { Link } from "wouter";
+import { SiteHeader } from "@/components/SiteHeader";
 
-const heroImage = "/manus-storage/espaco-wellness-hero-massagem_5dea997c.jpg";
+const heroImage = "/manus-storage/espaco-wellness-hero-enviada_d95aac3a.webp";
 const detailImage = "/manus-storage/espaco-wellness-miofascial_b26dc788.jpg";
 const drainageImage = "/manus-storage/espaco-wellness-drenagem_1fd6e3b7.jpg";
 const stillLifeImage = "/manus-storage/espaco-wellness-detalhe_a4e02ad2.jpg";
@@ -26,15 +27,7 @@ export default function Home() {
           <img src={heroImage} alt="" />
         </div>
         <div className="hero-overlay" aria-hidden="true" />
-        <header className="site-header site-header--light">
-          <Link href="/" className="header-logo" aria-label="Espaço Wellness — início">
-            <img src={logoSecondary} alt="Logo Espaço Wellness" />
-          </Link>
-          <nav className="header-nav" aria-label="Navegação principal">
-            <a href="#essencia">O espaço</a>
-            <Link href="/procedimentos">Procedimentos</Link>
-          </nav>
-        </header>
+        <SiteHeader variant="light" />
 
         <div className="hero-content">
           <div className="hero-brand" aria-label="Espaço Wellness">
@@ -44,12 +37,11 @@ export default function Home() {
             </p>
           </div>
           <p className="eyebrow eyebrow--light">Massoterapia &amp; estética</p>
-          <h1 id="hero-title">
-            Seu corpo também
-            <em> pede pausa.</em>
-          </h1>
+          <span className="horizon-line horizon-line--light" aria-hidden="true" />
+          <h1 id="hero-title">Seu corpo também pede pausa.</h1>
           <p className="hero-copy">
-            Um cuidado atento para desacelerar, recuperar presença e encontrar o seu melhor ritmo.
+            Pensando nisso, criamos um espaço para desacelerar o seu ritmo e devolver o cuidado que o
+            seu corpo pede.
           </p>
           <Link href="/procedimentos" className="round-cta round-cta--light">
             <span>Ver procedimentos</span>

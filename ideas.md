@@ -73,3 +73,6 @@ A logo enviada é a referência principal: o símbolo botânico/humano deve apar
 - Evitar composições excessivamente centralizadas e cartões idênticos.
 - Garantir contraste com sobreposições verdes ou off-white sempre que houver texto sobre fotografia.
 - As imagens devem transmitir toque profissional, luz natural e calma, sem cenários médicos frios.
+- Nas páginas internas, combinar ao menos uma composição editorial assimétrica com imagem, numeração, linha de horizonte ou bloco de apoio.
+- Repetir a linha de horizonte terracota como separador fino, com uso limitado a ênfases, numeração e microdetalhes; nunca aplicar marrom sobre fundos verdes.
+- Manter imagens táteis em luz natural nas rotas institucionais, com recortes ovais ou retangulares suaves.

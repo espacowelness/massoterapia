@@ -21,6 +21,22 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Raleway Wellness";
+  src: url("/manus-storage/Raleway-VariableFont_wght_668eae8e.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway Wellness";
+  src: url("/manus-storage/Raleway-Italic-VariableFont_wght_aa9b731d.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -91,7 +107,7 @@ body {
   margin: 0;
   background: var(--cream);
   color: var(--ink);
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway Wellness", "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
@@ -173,12 +189,16 @@ img {
 
 .header-nav {
   display: flex;
-  gap: clamp(1rem, 2.7vw, 2.5rem);
+  gap: clamp(0.75rem, 1.5vw, 1.6rem);
   align-items: center;
-  font-size: 0.67rem;
+  font-size: 0.56rem;
   font-weight: 700;
-  letter-spacing: 0.17em;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
+}
+
+.mobile-menu {
+  display: none;
 }
 
 .header-nav a {
@@ -209,7 +229,8 @@ img {
   display: flex;
   min-height: max(45rem, 100svh);
   isolation: isolate;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   background: var(--green-dark);
 }
@@ -225,10 +246,10 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 64% center;
-  filter: blur(8px) saturate(0.84);
-  opacity: 0.87;
-  transform: scale(1.06);
+  object-position: center;
+  filter: blur(11px) saturate(0.78) brightness(0.7);
+  opacity: 0.96;
+  transform: scale(1.08);
   animation: hero-drift 12s ease-in-out infinite alternate;
 }
 
@@ -248,9 +269,13 @@ img {
 }
 
 .hero-content {
-  width: min(100%, 51rem);
-  padding: 9.5rem clamp(1.5rem, 5.3vw, 5.75rem) 8.5rem;
+  display: flex;
+  width: min(100%, 61rem);
+  padding: 8rem clamp(1.5rem, 5.3vw, 5.75rem) 6.5rem;
+  flex-direction: column;
+  align-items: center;
   color: var(--cream);
+  text-align: center;
 }
 
 .hero-brand {
@@ -258,7 +283,7 @@ img {
   align-items: center;
   gap: 0.85rem;
   margin-bottom: clamp(2.75rem, 6vh, 5rem);
-  color: var(--terracotta);
+  color: var(--cream);
 }
 
 .hero-brand-logo {
@@ -266,7 +291,7 @@ img {
   height: 3.15rem;
   object-fit: contain;
   object-position: left center;
-  filter: brightness(0) saturate(100%) invert(36%) sepia(25%) saturate(1305%) hue-rotate(344deg) brightness(94%) contrast(88%);
+  filter: brightness(0) invert(1);
 }
 
 .hero-brand-name {
@@ -308,7 +333,7 @@ p {
   max-width: 10ch;
   margin: 0;
   font-family: "Palr45", Georgia, serif;
-  font-size: clamp(3.35rem, 7.4vw, 7.15rem);
+  font-size: clamp(4.1rem, 8.7vw, 8.45rem);
   font-weight: 400;
   letter-spacing: -0.055em;
   line-height: 0.87;
@@ -325,11 +350,15 @@ p {
   letter-spacing: -0.045em;
 }
 
+.hero-content h1 {
+  max-width: 9.8ch;
+}
+
 .hero-copy {
-  max-width: 31rem;
-  margin: clamp(1.75rem, 4vh, 2.75rem) 0 2rem;
+  max-width: 40rem;
+  margin: clamp(1.75rem, 4vh, 2.75rem) auto 2rem;
   color: rgba(234, 234, 222, 0.84);
-  font-size: clamp(0.92rem, 1.6vw, 1.1rem);
+  font-size: clamp(1rem, 1.75vw, 1.2rem);
   font-weight: 500;
 }
 
@@ -366,7 +395,7 @@ p {
 .scroll-cue {
   position: absolute;
   bottom: 2.25rem;
-  left: clamp(1.5rem, 5.3vw, 5.75rem);
+  left: 50%;
   display: inline-flex;
   gap: 0.7rem;
   align-items: center;
@@ -375,6 +404,7 @@ p {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+  transform: translateX(-50%);
   transition: color 180ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -392,6 +422,8 @@ p {
 
 .intro-statement {
   max-width: 47rem;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .intro-statement h2,
@@ -407,8 +439,15 @@ p {
   line-height: 0.98;
 }
 
+.intro-statement h2 {
+  max-width: 12ch;
+  margin-inline: auto;
+  font-size: clamp(3rem, 5.8vw, 5.95rem);
+}
+
 .intro-aside {
   align-self: end;
+  text-align: center;
 }
 
 .oval-frame {
@@ -431,7 +470,7 @@ p {
 
 .intro-aside p {
   max-width: 23rem;
-  margin: 1.7rem 0 0 auto;
+  margin: 1.7rem auto 0;
   color: #576158;
   font-size: 0.94rem;
 }
@@ -447,20 +486,23 @@ p {
   gap: 3rem;
   grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.43fr);
   align-items: end;
+  text-align: center;
 }
 
 .care-band h2 {
   max-width: 15ch;
+  margin-inline: auto;
   color: var(--cream);
 }
 
 .care-band__detail {
   padding-bottom: 0.35rem;
+  text-align: center;
 }
 
 .care-band__detail p {
   max-width: 24rem;
-  margin: 1.5rem 0 0;
+  margin: 1.5rem auto 0;
   color: rgba(234, 234, 222, 0.83);
   font-size: 0.9rem;
 }
@@ -469,7 +511,8 @@ p {
   display: block;
   width: 5.8rem;
   height: 1px;
-  background: var(--terracotta);
+  margin-inline: auto;
+  background: var(--cream);
 }
 
 .featured-section {
@@ -505,15 +548,18 @@ p {
 
 .featured-copy {
   max-width: 32rem;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .featured-copy h2 {
   max-width: 9ch;
+  margin-inline: auto;
 }
 
 .featured-copy > p:not(.eyebrow) {
   max-width: 29rem;
-  margin: 2rem 0;
+  margin: 2rem auto;
   color: #576158;
   font-size: 0.97rem;
 }
@@ -544,9 +590,11 @@ p {
 .procedures-preview__top {
   display: flex;
   gap: 2rem;
-  align-items: end;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   padding-bottom: 3rem;
+  text-align: center;
 }
 
 .procedures-preview h2 {
@@ -624,11 +672,12 @@ p {
 .price-content {
   width: 100%;
   color: var(--cream);
+  text-align: center;
 }
 
 .price-label {
   max-width: 18rem;
-  margin: 0 0 0.25rem;
+  margin: 0 auto 0.25rem;
   font-family: "Palr45", Georgia, serif;
   font-size: clamp(1.5rem, 2.5vw, 2.4rem);
   line-height: 1;
@@ -637,7 +686,7 @@ p {
 .price-value,
 .procedures-price__value {
   margin: 0;
-  color: var(--terracotta);
+  color: var(--cream);
   font-family: "Palatino Wellness", Georgia, serif;
   font-size: clamp(5.5rem, 12vw, 11.5rem);
   font-style: italic;
@@ -760,9 +809,11 @@ p {
 .procedures-list-heading {
   display: flex;
   gap: 2rem;
-  align-items: end;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 3.5rem;
+  text-align: center;
 }
 
 .procedures-list-heading > p:last-child {
@@ -778,12 +829,25 @@ p {
 
 .procedure-row {
   display: grid;
+  width: 100%;
   min-height: 7.2rem;
   gap: 1.5rem;
   grid-template-columns: 3.7rem minmax(0, 1fr) auto;
   align-items: center;
+  padding: 0;
   border-bottom: 1px solid rgba(38, 49, 40, 0.24);
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  text-align: left;
   transition: background-color 180ms cubic-bezier(0.23, 1, 0.32, 1), padding 180ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.procedure-disclosure:last-child .procedure-row {
+  border-bottom: 0;
 }
 
 .procedure-row__number {
@@ -823,7 +887,53 @@ p {
 .procedure-row:hover .procedure-row__arrow {
   background: var(--terracotta);
   color: var(--cream);
-  transform: rotate(45deg);
+  transform: rotate(180deg);
+}
+
+.procedure-row[aria-expanded="true"] {
+  padding-right: 1.05rem;
+  padding-left: 1.05rem;
+  background: rgba(234, 234, 222, 0.72);
+}
+
+.procedure-row[aria-expanded="true"] .procedure-row__arrow {
+  border-color: var(--green);
+  background: var(--green);
+  color: var(--cream);
+  transform: rotate(180deg);
+}
+
+.procedure-detail {
+  display: grid;
+  grid-template-columns: 3.7rem minmax(0, 1fr) auto;
+  padding: 0 0 2rem;
+  border-bottom: 1px solid rgba(38, 49, 40, 0.24);
+  animation: procedure-open 260ms cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.procedure-detail__body {
+  max-width: 39rem;
+  grid-column: 2 / 3;
+}
+
+.procedure-detail__body p {
+  margin: 0;
+  color: #576158;
+  font-size: 0.95rem;
+}
+
+.procedure-detail__body .page-button {
+  margin-top: 1.4rem;
+}
+
+.page-button--solid {
+  background: var(--green);
+  color: var(--cream);
+}
+
+.page-button--solid:hover {
+  background: var(--cream);
+  color: var(--green-dark);
 }
 
 .procedures-price {
@@ -847,6 +957,267 @@ p {
 
 .procedures-price__value {
   flex: 0 0 auto;
+}
+
+.inner-page {
+  min-height: 100vh;
+  background: var(--cream);
+}
+
+.page-hero {
+  display: flex;
+  min-height: 42rem;
+  padding-top: clamp(10rem, 17vw, 13rem);
+  padding-bottom: clamp(5rem, 10vw, 8rem);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.page-hero--compact {
+  min-height: 35rem;
+}
+
+.page-hero h1 {
+  max-width: 11ch;
+  margin: 0;
+  color: var(--green-ink);
+  font-family: "Palr45", Georgia, serif;
+  font-size: clamp(4rem, 8vw, 7.7rem);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 0.89;
+}
+
+.page-hero h1 em,
+.about-statement h2 em {
+  color: var(--terracotta);
+  font-family: "Palatino Wellness", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.page-hero__intro {
+  max-width: 38rem;
+  margin: 2rem auto 0;
+  color: #576158;
+  font-size: clamp(1rem, 1.5vw, 1.13rem);
+}
+
+.about-statement {
+  display: grid;
+  gap: clamp(2rem, 7vw, 8rem);
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  padding-top: clamp(6rem, 11vw, 9rem);
+  padding-bottom: clamp(6rem, 11vw, 9rem);
+  text-align: center;
+}
+
+.about-statement__number {
+  color: var(--terracotta);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.about-statement > div {
+  max-width: 52rem;
+  margin-inline: auto;
+}
+
+.about-statement h2 {
+  max-width: 14ch;
+  margin: 0 auto;
+  color: var(--green-ink);
+  font-family: "Palr45", Georgia, serif;
+  font-size: clamp(2.9rem, 6vw, 6.1rem);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 0.94;
+}
+
+.about-statement > div > p:last-child {
+  max-width: 37rem;
+  margin: 2.2rem auto 0;
+  color: #576158;
+  font-size: 1rem;
+}
+
+.about-commitment {
+  padding-block: clamp(6rem, 12vw, 9.5rem);
+  background: var(--green);
+  color: var(--cream);
+  text-align: center;
+}
+
+.about-commitment__inner {
+  display: flex;
+  max-width: 61rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-commitment__quote {
+  max-width: 18ch;
+  margin: 0;
+  font-family: "Palr45", Georgia, serif;
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 0.94;
+}
+
+.about-commitment .round-cta {
+  margin-top: 2.4rem;
+}
+
+.location-section {
+  display: grid;
+  gap: clamp(1.5rem, 5vw, 5rem);
+  grid-template-columns: minmax(0, 1.25fr) minmax(16rem, 0.56fr);
+  padding-bottom: clamp(7rem, 12vw, 10rem);
+  align-items: stretch;
+}
+
+.location-map-frame {
+  min-height: 32rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  background: var(--cream-deep);
+  box-shadow: 0 1rem 3rem rgba(38, 49, 40, 0.1);
+}
+
+.location-map-frame iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 32rem;
+  border: 0;
+}
+
+.location-card {
+  display: flex;
+  padding: clamp(2rem, 4vw, 3.5rem);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--green);
+  color: var(--cream);
+  text-align: center;
+}
+
+.location-card .eyebrow {
+  margin-top: 1.5rem;
+  color: rgba(234, 234, 222, 0.75);
+}
+
+.location-card h2 {
+  max-width: 10ch;
+  margin: 0;
+  font-family: "Palr45", Georgia, serif;
+  font-size: clamp(2.35rem, 4vw, 4.1rem);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 0.96;
+}
+
+.location-card > p:not(.eyebrow) {
+  margin: 1.3rem 0 2rem;
+  color: rgba(234, 234, 222, 0.82);
+  font-size: 0.92rem;
+}
+
+.page-button {
+  display: inline-flex;
+  gap: 0.7rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.2rem;
+  padding: 0.75rem 1.2rem 0.75rem 1.35rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 0.66rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  transition: background-color 180ms cubic-bezier(0.23, 1, 0.32, 1), color 180ms cubic-bezier(0.23, 1, 0.32, 1), transform 160ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.page-button--dark {
+  background: var(--cream);
+  color: var(--green-dark);
+}
+
+.page-button--dark:hover {
+  background: var(--green-dark);
+  color: var(--cream);
+  transform: translateY(-2px);
+}
+
+.location-card .page-button--dark:hover {
+  background: transparent;
+  color: var(--cream);
+}
+
+.page-button:active {
+  transform: scale(0.97);
+}
+
+.plans-statement {
+  display: grid;
+  gap: clamp(2.5rem, 8vw, 8rem);
+  grid-template-columns: minmax(3rem, 0.25fr) minmax(0, 1fr);
+  max-width: 72rem;
+  padding-top: clamp(5rem, 10vw, 8rem);
+  padding-bottom: clamp(7rem, 12vw, 10rem);
+  text-align: center;
+}
+
+.plans-statement__line {
+  width: 1px;
+  height: 100%;
+  background: var(--terracotta);
+}
+
+.plans-statement__content {
+  max-width: 46rem;
+  margin-inline: auto;
+}
+
+.plans-statement__content > p {
+  margin: 0;
+  color: var(--green-ink);
+  font-family: "Palr45", Georgia, serif;
+  font-size: clamp(1.85rem, 3.35vw, 3.35rem);
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+.plans-statement__content > p + p {
+  margin-top: 1.65rem;
+}
+
+.plans-statement__content .plans-statement__closing {
+  max-width: 30rem;
+  margin: 2.5rem auto 0;
+  color: #576158;
+  font-family: "Raleway Wellness", "Raleway", sans-serif;
+  font-size: 1.04rem;
+  font-weight: 550;
+  letter-spacing: 0;
+  line-height: 1.65;
+}
+
+.plans-statement .page-button {
+  margin-top: 2.2rem;
+  background: var(--green);
+  color: var(--cream);
+}
+
+.plans-statement .page-button:hover {
+  background: transparent;
+  color: var(--green-dark);
 }
 
 .reveal-up {
@@ -878,6 +1249,17 @@ p {
   }
 }
 
+@keyframes procedure-open {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 760px) {
   .site-header {
     padding-top: 1.25rem;
@@ -885,9 +1267,64 @@ p {
   }
 
   .header-nav {
-    gap: 0.9rem;
-    font-size: 0.56rem;
+    display: none;
+  }
+
+  .mobile-menu {
+    position: relative;
+    display: block;
+  }
+
+  .mobile-menu summary {
+    display: grid;
+    width: 2.4rem;
+    height: 2.4rem;
+    place-items: center;
+    list-style: none;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+  }
+
+  .mobile-menu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .mobile-menu__close {
+    display: none;
+  }
+
+  .mobile-menu[open] .mobile-menu__open {
+    display: none;
+  }
+
+  .mobile-menu[open] .mobile-menu__close {
+    display: block;
+  }
+
+  .mobile-menu nav {
+    position: absolute;
+    top: 3.15rem;
+    right: 0;
+    display: grid;
+    min-width: 13rem;
+    padding: 0.75rem;
+    border: 1px solid rgba(234, 234, 222, 0.34);
+    background: rgba(29, 56, 29, 0.96);
+    box-shadow: 0 1rem 3rem rgba(10, 27, 13, 0.2);
+  }
+
+  .site-header--dark .mobile-menu nav {
+    border-color: rgba(38, 49, 40, 0.18);
+    background: var(--cream);
+    box-shadow: 0 1rem 3rem rgba(38, 49, 40, 0.12);
+  }
+
+  .mobile-menu nav a {
+    padding: 0.72rem 0.85rem;
+    font-size: 0.62rem;
+    font-weight: 700;
     letter-spacing: 0.13em;
+    text-transform: uppercase;
   }
 
   .hero-section {
@@ -949,7 +1386,8 @@ p {
   }
 
   .procedures-preview__top {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-bottom: 2.25rem;
   }
 
@@ -1007,6 +1445,11 @@ p {
     grid-template-columns: 2.2rem minmax(0, 1fr) auto;
   }
 
+  .procedure-detail {
+    grid-template-columns: 2.2rem minmax(0, 1fr);
+    padding-bottom: 1.5rem;
+  }
+
   .procedure-row__arrow {
     width: 2.4rem;
     height: 2.4rem;
@@ -1017,11 +1460,42 @@ p {
   }
 }
 
-@media (max-width: 440px) {
-  .header-nav a:first-child {
+@media (max-width: 760px) {
+  .page-hero {
+    min-height: 37rem;
+    padding-top: 8.8rem;
+  }
+
+  .page-hero--compact {
+    min-height: 32rem;
+  }
+
+  .about-statement,
+  .location-section,
+  .plans-statement {
+    grid-template-columns: 1fr;
+  }
+
+  .about-statement__number,
+  .plans-statement__line {
     display: none;
   }
 
+  .location-map-frame,
+  .location-map-frame iframe {
+    min-height: 24rem;
+  }
+
+  .location-map-frame {
+    border-radius: 1.35rem;
+  }
+
+  .location-card {
+    min-height: 23rem;
+  }
+}
+
+@media (max-width: 440px) {
   .intro-aside {
     grid-template-columns: 1fr;
   }
@@ -1044,6 +1518,10 @@ p {
     grid-template-columns: 1.75rem minmax(0, 1fr) 2.1rem;
   }
 
+  .procedure-detail {
+    grid-template-columns: 1.75rem minmax(0, 1fr);
+  }
+
   .procedure-row h2 {
     font-size: 1.55rem;
   }
@@ -1057,5 +1535,249 @@ p {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Extensão editorial: imagens táteis, linha de horizonte e marca verbal nas páginas internas. */
+.header-logo {
+  gap: 0.55rem;
+}
+
+.header-logo img {
+  width: clamp(2.4rem, 3.6vw, 3.35rem);
+}
+
+.header-wordmark {
+  color: currentColor;
+  font-family: "Palr45", Georgia, serif;
+  font-size: clamp(0.82rem, 1.35vw, 1.06rem);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.header-wordmark em {
+  font-family: "Palatino Wellness", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.horizon-line {
+  display: block;
+  width: clamp(3.6rem, 6vw, 5.8rem);
+  height: 1px;
+  margin: 0.1rem auto 1.35rem;
+  background: var(--terracotta);
+}
+
+.horizon-line--light {
+  background: var(--cream);
+}
+
+.hero-content .horizon-line {
+  margin-top: -0.25rem;
+}
+
+.about-portrait-section {
+  display: grid;
+  gap: clamp(2rem, 8vw, 9rem);
+  grid-template-columns: minmax(15rem, 0.64fr) minmax(16rem, 0.7fr);
+  padding-top: clamp(3rem, 8vw, 7rem);
+  padding-bottom: clamp(1rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.about-portrait-section__image {
+  position: relative;
+  width: min(100%, 23rem);
+  margin: 0 0 0 auto;
+}
+
+.about-portrait-section__image img {
+  width: 100%;
+  aspect-ratio: 0.84;
+  object-fit: cover;
+  border-radius: 12rem 12rem 0 0;
+}
+
+.about-portrait-section__image figcaption {
+  position: absolute;
+  right: -1.35rem;
+  bottom: 1.7rem;
+  padding: 0.55rem 0.8rem;
+  background: var(--terracotta);
+  color: var(--cream);
+  font-family: "Palatino Wellness", Georgia, serif;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.about-portrait-section__copy {
+  max-width: 24rem;
+  text-align: center;
+}
+
+.about-portrait-section__copy > p:last-child {
+  margin: 0;
+  color: var(--green-ink);
+  font-family: "Palr45", Georgia, serif;
+  font-size: clamp(1.8rem, 3.2vw, 3rem);
+  letter-spacing: -0.045em;
+  line-height: 1.03;
+}
+
+.about-statement .horizon-line {
+  margin-top: 1.1rem;
+}
+
+.location-map {
+  width: 100%;
+  height: 100%;
+  min-height: 32rem;
+}
+
+.location-map-frame > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.location-map-image {
+  width: 100%;
+  height: 100%;
+  min-height: 32rem;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.location-map-frame:hover .location-map-image {
+  transform: scale(1.035);
+}
+
+.location-arrival {
+  display: grid;
+  gap: clamp(2rem, 8vw, 8rem);
+  grid-template-columns: minmax(14rem, 0.52fr) minmax(15rem, 0.65fr);
+  padding-bottom: clamp(4rem, 8vw, 7rem);
+  align-items: center;
+}
+
+.location-arrival__copy {
+  max-width: 22rem;
+  text-align: center;
+}
+
+.location-arrival__copy > p:last-child {
+  margin: 0;
+  color: var(--green-ink);
+  font-family: "Palr45", Georgia, serif;
+  font-size: clamp(1.9rem, 3.1vw, 3.2rem);
+  letter-spacing: -0.045em;
+  line-height: 1.04;
+}
+
+.location-arrival figure {
+  width: min(100%, 24rem);
+  margin: 0 0 0 auto;
+}
+
+.location-arrival img {
+  width: 100%;
+  aspect-ratio: 0.9;
+  object-fit: cover;
+  border-radius: 10rem 10rem 0 0;
+}
+
+.plans-process {
+  display: grid;
+  gap: clamp(2rem, 8vw, 8rem);
+  grid-template-columns: minmax(15rem, 0.72fr) minmax(17rem, 0.72fr);
+  padding-top: clamp(2rem, 5vw, 4rem);
+  padding-bottom: clamp(3rem, 7vw, 6rem);
+  align-items: center;
+}
+
+.plans-process__image {
+  width: min(100%, 36rem);
+  margin: 0;
+  overflow: hidden;
+}
+
+.plans-process__image img {
+  width: 100%;
+  aspect-ratio: 1.25;
+  object-fit: cover;
+}
+
+.plans-process__steps {
+  max-width: 29rem;
+  text-align: center;
+}
+
+.plans-process ol {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plans-process li {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(38, 49, 40, 0.22);
+  color: var(--green-ink);
+  font-family: "Palr45", Georgia, serif;
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.plans-process li span {
+  color: var(--terracotta);
+  font-family: "Raleway Wellness", "Raleway", sans-serif;
+  font-size: 0.63rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+}
+
+.procedures-hero .horizon-line {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+@media (max-width: 760px) {
+  .header-wordmark {
+    font-size: 0.88rem;
+  }
+
+  .about-portrait-section,
+  .location-arrival,
+  .plans-process {
+    grid-template-columns: 1fr;
+  }
+
+  .about-portrait-section__image,
+  .location-arrival figure,
+  .plans-process__image {
+    margin-inline: auto;
+  }
+
+  .about-portrait-section__copy,
+  .location-arrival__copy,
+  .plans-process__steps {
+    margin-inline: auto;
+  }
+
+  .location-map {
+    min-height: 24rem;
+  }
+
+  .location-map-image {
+    min-height: 24rem;
   }
 }
