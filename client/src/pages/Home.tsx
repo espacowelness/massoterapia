@@ -13,7 +13,7 @@ const drainageImage = "/manus-storage/espaco-wellness-massagem-autoral_406f65e0.
 const stillLifeImage = "/manus-storage/espaco-wellness-detalhe_a4e02ad2.jpg";
 const techniqueBackground = "/manus-storage/espaco-wellness-tecnica-fundo_7c08c33d.webp";
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
-const whatsappUrl = "https://wa.me/55859869821513?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20procedimentos%20do%20Espaço%20Wellness.";
+const whatsappUrl = "https://wa.me/5585986981513?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20procedimentos%20do%20Espaço%20Wellness.";
 
 const curatedCare = [
   "Massagem miofascial",

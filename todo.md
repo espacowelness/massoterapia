@@ -60,3 +60,8 @@
 
 - [x] Substituir todos os links e CTAs de WhatsApp pelo número +55 85 98698-21513.
 - [x] Verificar os encaminhamentos, salvar checkpoint e entregar a atualização.
+
+## Correção final de WhatsApp
+
+- [x] Atualizar todos os CTAs de WhatsApp para +55 85 98698-1513.
+- [x] Verificar os links, salvar checkpoint e entregar a atualização.
