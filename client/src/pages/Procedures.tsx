@@ -133,6 +133,7 @@ export default function Procedures() {
       <section className="procedures-price section-wrap">
         <div>
           <p className="eyebrow eyebrow--light">Uma pausa que cabe no seu tempo</p>
+          <span className="horizon-line horizon-line--light procedures-price__horizon" aria-hidden="true" />
           <p className="procedures-price__line">Procedimentos a partir de</p>
         </div>
         <p className="procedures-price__value">R$ 80</p>

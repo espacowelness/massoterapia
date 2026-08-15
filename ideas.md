@@ -81,3 +81,5 @@ A logo enviada é a referência principal: o símbolo botânico/humano deve apar
 - Usar a linha de horizonte terracota e a numeração editorial como estrutura recorrente de grandes transições, não apenas como ornamento.
 - Dar presença legível ao símbolo botânico e ao wordmark na abertura e navegação, sem competir com a headline.
 - Preferir um fluxo editorial mais compacto nas páginas internas, aproximando hero, imagem e conteúdo para que o respiro não se transforme em vazio.
+- Nas listas de serviços, deixar numeração, tipografia e linhas finas conduzirem a leitura antes dos controles de interação.
+- Usar a linha de horizonte como divisor de transições e faixas de preço, não apenas como sublinhado decorativo.

@@ -43,3 +43,10 @@
 - [x] Reorganizar Planos, centralizar o bloco inferior e reduzir espaços em branco do desktop com tipografia maior.
 - [x] Adicionar Instagram e WhatsApp reais ao rodapé global.
 - [x] Validar responsividade, salvar checkpoint e entregar a atualização.
+
+## Cabeçalho móvel e animações
+
+- [x] Exibir somente o símbolo da logo no cabeçalho de celular, sem wordmark lateral.
+- [x] Clarear sutilmente os tons de texto verde mantendo a legibilidade.
+- [x] Adicionar animação lateral na abertura e entradas ascendentes nos procedimentos.
+- [x] Validar em desktop e celular, salvar checkpoint e entregar a atualização.
