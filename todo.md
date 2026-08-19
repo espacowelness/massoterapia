@@ -79,3 +79,15 @@
 
 - [x] Preparar a foto profissional enviada para uso na página Quem Sou Eu.
 - [x] Substituir a imagem existente e validar o novo enquadramento.
+
+## Pacote de código-fonte
+
+- [x] Gerar arquivo ZIP com o código atual do Espaço Wellness.
+- [x] Entregar o arquivo com orientação breve de uso.
+
+## Publicação do código no GitHub
+
+- [x] Inspecionar o repositório `wilkens13/espaco-wellness` e preservar seus arquivos existentes.
+- [x] Preparar uma cópia GitHub-ready do projeto atual.
+- [x] Confirmar antes de enviar alterações ao repositório remoto.
+- [ ] Publicar o código atualizado e entregar o link do repositório.
