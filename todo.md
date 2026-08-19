@@ -74,3 +74,8 @@
 - [x] Inserir a duração de cada procedimento dentro do conteúdo expansível.
 - [x] Atualizar todos os links de WhatsApp para +55 85 98698-1513.
 - [x] Validar responsividade, salvar checkpoint e entregar a atualização.
+
+## Foto profissional na página Quem Sou Eu
+
+- [x] Preparar a foto profissional enviada para uso na página Quem Sou Eu.
+- [x] Substituir a imagem existente e validar o novo enquadramento.

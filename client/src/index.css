@@ -2191,6 +2191,10 @@ p {
   line-height: 1.65;
 }
 
+.about-page .about-portrait-section__image img {
+  object-position: 50% 18%;
+}
+
 .price-content--clickable {
   display: block;
   color: var(--cream);

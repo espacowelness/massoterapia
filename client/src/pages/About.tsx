@@ -8,7 +8,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const logoSecondary = "/manus-storage/logo-espaco-wellness-v2_b46486b3.webp";
-const aboutImage = "/manus-storage/espaco-wellness-ritual-autoral_9656d547.jpg";
+const aboutImage = "/manus-storage/edineuma-espaco-wellness_382b55e3.jpeg";
 
 export default function About() {
   return (
@@ -28,7 +28,7 @@ export default function About() {
 
       <section className="about-portrait-section section-wrap">
         <figure className="about-portrait-section__image">
-          <img src={aboutImage} alt="Toalhas e preparação cuidadosa de um espaço de massoterapia" />
+          <img src={aboutImage} alt="Edineuma, massoterapeuta e especialista em estética corporal, no Espaço Wellness" />
           <figcaption>O cuidado começa antes da maca.</figcaption>
         </figure>
         <div className="about-portrait-section__copy">
