@@ -32,7 +32,7 @@ export default function Home() {
         <SiteHeader variant="light" />
 
         <div className="hero-content">
-          <Link href="/quem-sou-eu" className="hero-brand" aria-label="Conheça o Espaço Wellness">
+          <Link href="/" className="hero-brand" aria-label="Espaço Wellness — Início">
             <img className="hero-brand-logo" src={logoSecondary} alt="" />
             <p className="hero-brand-name">
               Espaço <em>Wellness</em>
@@ -68,9 +68,10 @@ export default function Home() {
           <div className="oval-frame oval-frame--intro">
             <img src={detailImage} alt="Atendimento de massoterapia com toque cuidadoso nos ombros" />
           </div>
-          <p>
-            No Espaço Wellness, cada atendimento é conduzido com escuta, técnica e acolhimento —
-            para que o cuidado faça sentido no seu dia a dia.
+          <p className="wellness-manifesto">
+            Por isso o Espaço Wellness foi criado, para <strong>acolher pessoas que precisam cuidar de
+            si mesmas.</strong> Aqui juntamos carinho e suas prioridades para te atender da <strong>melhor
+            forma possível.</strong>
           </p>
         </div>
       </section>

@@ -21,7 +21,7 @@ const navigation = [
 export function SiteHeader({ variant = "dark" }: SiteHeaderProps) {
   return (
     <header className={`site-header site-header--${variant}`}>
-      <Link href="/quem-sou-eu" className="header-logo" aria-label="Espaço Wellness — Quem Somos">
+      <Link href="/" className="header-logo" aria-label="Espaço Wellness — Início">
         <img src={logoSecondary} alt="Logo Espaço Wellness" />
         <span className="header-wordmark">
           Espaço <em>Wellness</em>

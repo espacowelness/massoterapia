@@ -928,6 +928,142 @@ p {
   font-size: 0.95rem;
 }
 
+.procedure-detail__body .procedure-duration {
+  margin-bottom: 0.8rem;
+  color: var(--terracotta);
+  font-family: "Raleway Wellness", "Raleway", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.procedure-detail__body .procedure-duration strong {
+  color: var(--green-ink);
+  font-weight: 700;
+}
+
+/* Reforço editorial: linhas estruturais, lockup mais presente e índice de cuidados mais gráfico. */
+.intro-section,
+.featured-section,
+.procedures-preview,
+.plans-statement,
+.procedures-list-section {
+  position: relative;
+}
+
+.intro-section::before,
+.featured-section::before,
+.procedures-list-section::before {
+  position: absolute;
+  top: 0;
+  width: min(15rem, 23vw);
+  height: 1px;
+  background: var(--terracotta);
+  content: "";
+}
+
+.intro-section::before,
+.procedures-list-section::before {
+  left: clamp(1.5rem, 5.3vw, 5.75rem);
+}
+
+.featured-section::before {
+  right: clamp(1.5rem, 5.3vw, 5.75rem);
+}
+
+.hero-brand {
+  gap: 0.72rem;
+}
+
+.hero-brand-logo {
+  width: clamp(2.6rem, 4.7vw, 3.9rem);
+}
+
+.hero-brand-name {
+  font-size: clamp(1.38rem, 2.5vw, 2.1rem);
+}
+
+.footer-logo {
+  width: 3.5rem;
+}
+
+.footer-wordmark {
+  font-size: clamp(1.3rem, 2.2vw, 1.65rem);
+}
+
+.procedures-list {
+  position: relative;
+}
+
+.procedure-row__number {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+}
+
+.procedure-row h2::before {
+  height: 2.15rem;
+  background: var(--terracotta);
+}
+
+.price-content::before,
+.procedures-price > div::before {
+  display: block;
+  width: min(100%, 17rem);
+  height: 1px;
+  margin: 0 auto 1.35rem;
+  background: var(--terracotta);
+  content: "";
+}
+
+.procedures-price > div::before {
+  margin-left: 0;
+  background: rgba(234, 234, 222, 0.82);
+}
+
+@media (min-width: 761px) {
+  .intro-section .intro-statement {
+    transform: translateX(-4vw);
+  }
+
+  .featured-section .featured-copy {
+    transform: translateX(3vw);
+  }
+
+  .plans-process__steps {
+    transform: translateX(2.2vw);
+  }
+}
+
+@media (max-width: 760px) {
+  .intro-section::before,
+  .featured-section::before,
+  .procedures-list-section::before {
+    width: 7rem;
+  }
+
+  .intro-section::before,
+  .procedures-list-section::before {
+    left: 1.5rem;
+  }
+
+  .featured-section::before {
+    right: 1.5rem;
+  }
+
+  .hero-brand-logo {
+    width: 2.45rem;
+  }
+
+  .hero-brand-name {
+    font-size: 1.28rem;
+  }
+
+  .footer-logo {
+    width: 3.05rem;
+  }
+}
+
 .procedure-detail__body .page-button {
   margin-top: 1.4rem;
 }
@@ -2028,6 +2164,31 @@ p {
 .intro-aside p {
   max-width: 24rem;
   margin: 1.55rem auto 0;
+}
+
+.wellness-manifesto {
+  max-width: 31rem;
+  color: #426947;
+  font-family: "Raleway Wellness", "Raleway", sans-serif;
+  font-size: clamp(1rem, 1.45vw, 1.17rem);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.wellness-manifesto strong {
+  color: var(--green-ink);
+  font-weight: 600;
+}
+
+.about-commitment__support {
+  max-width: 35rem;
+  margin: 1.75rem auto 0;
+  color: rgba(234, 234, 222, 0.84);
+  font-family: "Raleway Wellness", "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
 }
 
 .price-content--clickable {

@@ -15,42 +15,52 @@ const whatsappUrl = "https://wa.me/5585986981513?text=Olá%2C%20gostaria%20de%20
 const procedures = [
   {
     name: "Aplicação de Kinesio Taping",
+    duration: "20 a 30 minutos",
     description: "Técnica que utiliza bandagens elásticas aplicadas sobre a pele para auxiliar na estabilização muscular, alívio de dores e redução de inflamações, sem restringir os movimentos do corpo. Indicada para lesões, tensões musculares e recuperação pós-treino.",
   },
   {
     name: "Tratamento de Fibromialgia",
+    duration: "50 a 60 minutos",
     description: "Protocolo de massoterapia voltado para o alívio dos pontos de dor característicos da fibromialgia, com técnicas suaves que ajudam a reduzir a tensão muscular, melhorar a qualidade do sono e proporcionar mais bem-estar no dia a dia.",
   },
   {
     name: "Drenagem Pós-Operatório",
+    duration: "50 a 60 minutos",
     description: "Massagem específica indicada após procedimentos cirúrgicos, que auxilia na redução do inchaço, na reabsorção de líquidos e na recuperação do organismo, contribuindo para um pós-operatório mais confortável e com melhores resultados estéticos.",
   },
   {
     name: "Tratamento de Lipedema",
+    duration: "50 a 60 minutos",
     description: "Abordagem terapêutica voltada para pessoas com lipedema, com técnicas que ajudam a aliviar a dor, reduzir o inchaço e melhorar a circulação nas áreas afetadas, promovendo mais conforto e qualidade de vida.",
   },
   {
     name: "Massagem Miofascial",
+    duration: "50 a 60 minutos",
     description: "Técnica que atua na liberação das tensões acumuladas na fáscia muscular, aliviando dores, melhorando a mobilidade e restaurando o equilíbrio do corpo.",
   },
   {
     name: "Massagem Relaxante",
+    duration: "50 a 60 minutos",
     description: "Massagem indicada para reduzir o estresse e a tensão acumulada, promovendo relaxamento profundo, alívio da fadiga e uma sensação renovada de bem-estar.",
   },
   {
     name: "Drenagem Linfática",
+    duration: "50 a 60 minutos",
     description: "Técnica de estímulo do sistema linfático que auxilia na eliminação de toxinas e líquidos retidos, reduzindo o inchaço, melhorando a circulação e proporcionando uma sensação de leveza ao corpo.",
   },
   {
     name: "Ventosaterapia",
+    duration: "30 a 40 minutos",
     description: "Técnica milenar que utiliza ventosas para estimular a circulação sanguínea, aliviar tensões musculares e promover a soltura de pontos de dor, auxiliando na recuperação e no relaxamento do corpo.",
   },
   {
     name: "Lipocavitação",
+    duration: "40 a 60 minutos",
     description: "Procedimento estético não invasivo que utiliza ultrassom para auxiliar na redução de medidas e no combate à gordura localizada, contribuindo para um contorno corporal mais definido.",
   },
   {
     name: "Acupuntura",
+    duration: "30 a 50 minutos",
     description: "Prática milenar que utiliza a inserção de agulhas finas em pontos específicos do corpo, auxiliando no alívio de dores, na redução do estresse e no equilíbrio geral do organismo.",
   },
 ];
@@ -117,6 +127,7 @@ export default function Procedures() {
               {openIndex === index && (
                 <div id={`procedure-detail-${index}`} className="procedure-detail">
                   <div className="procedure-detail__body">
+                    <p className="procedure-duration">Duração estimada: <strong>{procedure.duration}</strong></p>
                     <p>{procedure.description}</p>
                     <a href={whatsappUrl} target="_blank" rel="noreferrer" className="page-button page-button--solid">
                       <span>Falar no WhatsApp</span>

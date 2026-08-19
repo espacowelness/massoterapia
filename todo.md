@@ -65,3 +65,12 @@
 
 - [x] Atualizar todos os CTAs de WhatsApp para +55 85 98698-1513.
 - [x] Verificar os links, salvar checkpoint e entregar a atualização.
+
+## Conteúdo institucional e procedimentos
+
+- [x] Inserir o novo texto de apresentação em Raleway Light Italic, com destaques em SemiBold.
+- [x] Direcionar a marca superior Espaço Wellness para o início do site.
+- [x] Substituir a apresentação da página Quem Sou Eu pelo texto de Edineuma.
+- [x] Inserir a duração de cada procedimento dentro do conteúdo expansível.
+- [x] Atualizar todos os links de WhatsApp para +55 85 98698-1513.
+- [x] Validar responsividade, salvar checkpoint e entregar a atualização.

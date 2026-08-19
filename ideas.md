@@ -83,3 +83,5 @@ A logo enviada é a referência principal: o símbolo botânico/humano deve apar
 - Preferir um fluxo editorial mais compacto nas páginas internas, aproximando hero, imagem e conteúdo para que o respiro não se transforme em vazio.
 - Nas listas de serviços, deixar numeração, tipografia e linhas finas conduzirem a leitura antes dos controles de interação.
 - Usar a linha de horizonte como divisor de transições e faixas de preço, não apenas como sublinhado decorativo.
+- Usar linhas terracota longas para abrir seções, marcar listas e apoiar blocos de preço; a linha deve organizar a leitura antes de decorar.
+- Reforçar o lockup do Espaço Wellness em hero e rodapé, preservando o símbolo isolado no cabeçalho móvel por solicitação explícita da marca.

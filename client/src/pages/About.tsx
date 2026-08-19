@@ -18,23 +18,24 @@ export default function About() {
         <p className="eyebrow">Quem sou eu</p>
         <span className="horizon-line" aria-hidden="true" />
         <h1 id="about-title">
-          Cuidado que começa com <em>escuta.</em>
+          Prazer, eu sou <em>Edineuma.</em>
         </h1>
         <p className="page-hero__intro">
-          O Espaço Wellness foi pensado para acolher o seu momento com leveza, atenção e uma pausa
-          real da rotina.
+          Me chamo Edineuma, sou Massoterapeuta e Especialista em Estética Corporal, com mais de 2 anos
+          de experiência e uma bagagem construída com muito estudo, dedicação e amor pelo que faço.
         </p>
       </section>
 
       <section className="about-portrait-section section-wrap">
         <figure className="about-portrait-section__image">
           <img src={aboutImage} alt="Toalhas e preparação cuidadosa de um espaço de massoterapia" />
-          <figcaption>O cuidado começa nos detalhes.</figcaption>
+          <figcaption>O cuidado começa antes da maca.</figcaption>
         </figure>
         <div className="about-portrait-section__copy">
-          <p className="eyebrow">Presença em cada etapa</p>
+          <p className="eyebrow">Conforto e tranquilidade</p>
           <p>
-            Um atendimento que respeita o seu tempo antes, durante e depois de cada cuidado.
+            Atendo no Espaço Wellness, um ambiente pensado pra te receber com conforto e tranquilidade —
+            porque acredito que o cuidado começa antes mesmo de você deitar na maca.
           </p>
         </div>
       </section>
@@ -42,14 +43,15 @@ export default function About() {
       <section className="about-statement section-wrap">
         <span className="about-statement__number">01</span>
         <div>
-          <p className="eyebrow">Uma experiência feita para você</p>
+          <p className="eyebrow">Uma escuta que guia o cuidado</p>
           <span className="horizon-line" aria-hidden="true" />
           <h2>
-            Cada atendimento começa por entender como você está e o que o seu corpo <em>pede agora.</em>
+            Aqui não existe atendimento padrão, porque você <em>não é padrão.</em>
           </h2>
           <p>
-            Aqui, massoterapia e estética não são uma rotina apressada. São um momento de presença,
-            construído com técnica, cuidado e respeito ao ritmo de quem chega.
+            Mas o que realmente me define como profissional vai além dos cursos e da técnica. Sou uma
+            pessoa extremamente atenciosa, que ouve antes de atender. Cada pessoa que chega até mim traz
+            uma história, uma dor, uma necessidade diferente — e é exatamente isso que guia o meu trabalho.
           </p>
         </div>
       </section>
@@ -58,7 +60,11 @@ export default function About() {
         <div className="section-wrap about-commitment__inner">
           <p className="eyebrow eyebrow--light">Meu compromisso com o seu cuidado</p>
           <p className="about-commitment__quote">
-            Que você saia daqui se sentindo mais leve, mais acolhido e mais próximo de si.
+            Minha prioridade sempre foi e sempre será você: o seu bem-estar, o seu conforto, o seu resultado.
+          </p>
+          <p className="about-commitment__support">
+            Porque pra mim, cuidar de verdade é isso — estar presente em cada detalhe, em cada sessão,
+            em cada momento.
           </p>
           <Link href="/procedimentos" className="round-cta round-cta--light">
             <span>Conheça os procedimentos</span>
