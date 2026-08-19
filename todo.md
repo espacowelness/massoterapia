@@ -90,4 +90,4 @@
 - [x] Inspecionar o repositório `wilkens13/espaco-wellness` e preservar seus arquivos existentes.
 - [x] Preparar uma cópia GitHub-ready do projeto atual.
 - [x] Confirmar antes de enviar alterações ao repositório remoto.
-- [ ] Publicar o código atualizado e entregar o link do repositório.
+- [x] Publicar o código atualizado e entregar o link do repositório.
